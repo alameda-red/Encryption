@@ -4,6 +4,10 @@ namespace Alameda\Component\Encryption\PrivacyGuard;
 
 use Alameda\Component\Encryption\Exception\ConfigurationException;
 
+/**
+ * @author Sebastian Kuhlmann <zebba@hotmail.de>
+ * @package Alameda\Component\Encryption
+ */
 class VerifyPrivacyGuard extends AbstractPrivacyGuard
 {
     /**

@@ -4,6 +4,10 @@ namespace Alameda\Component\Encryption\PrivacyGuard;
 
 use Alameda\Component\Encryption\Exception\ConfigurationException;
 
+/**
+ * @author Sebastian Kuhlmann <zebba@hotmail.de>
+ * @package Alameda\Component\Encryption
+ */
 class EncryptPrivacyGuard extends AbstractPrivacyGuard
 {
     /**
@@ -12,7 +16,6 @@ class EncryptPrivacyGuard extends AbstractPrivacyGuard
      */
     public function __construct($fingerprint)
     {
-        #putenv('GNUPGHOME=/home/sf/.gnupg');
         $gpg = new \gnupg;
 
         if (! $gpg->addencryptkey($fingerprint)) {
